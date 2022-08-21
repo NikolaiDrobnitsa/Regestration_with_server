@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Regestration_with_server.Model
 {
-    internal class Users
+    internal class User_data
     {
         public int id { get; set; }
         public string login { get; set; }
@@ -15,7 +15,7 @@ namespace Regestration_with_server.Model
         {
             return string.Format("id: {0}\tlogin: {1}\tpassword_hesh: {2}", id, login, password_hesh);
         }
-        public Users()
+        public User_data()
         {
 
         }

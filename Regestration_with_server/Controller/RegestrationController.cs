@@ -26,8 +26,8 @@ namespace Regestration_with_server.Controller
             string connectionString = @"Data Source=SQL8004.site4now.net;Initial Catalog=db_a8bcfd_juzz;User Id=db_a8bcfd_juzz_admin;Password=JuzzikASP1";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                Users regestration = new Users() { login = _login, password_hesh = new Text_crypt().Generate(_pass) };
-                connection.Execute("INSERT INTO Users (login, password_hesh) VALUES(@login,@password_hesh)", regestration);
+                User_data regestration = new User_data() { login = _login, password_hesh = new Text_crypt().Generate(_pass) };
+                connection.Execute("INSERT INTO User_data (login, password_hesh) VALUES(@login,@password_hesh)", regestration);
             }
 
         }

@@ -89,13 +89,25 @@
     <Compile Include="Controller\AuthorizationController.cs" />
     <Compile Include="Controller\RegestrationController.cs" />
     <Compile Include="Controller\Text_crypt.cs" />
+    <Compile Include="GUI\Begin_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Begin_form.Designer.cs">
+      <DependentUpon>Begin_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Users.cs" />
+    <Compile Include="GUI\SingIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SingIn.Designer.cs">
+      <DependentUpon>SingIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User_data.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

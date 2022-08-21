@@ -38,7 +38,7 @@ namespace Regestration_with_server.Controller
             {
                 try
                 {
-                    var myEvent = connection.QueryFirst<Users>(string.Format("SELECT * FROM Users WHERE login = '{0}'", auth_login));
+                    var myEvent = connection.QueryFirst<User_data>(string.Format("SELECT * FROM User_data WHERE login = '{0}'", auth_login));
 
                     if (new Text_crypt().Verification(auth_pass, myEvent.password_hesh))
                     {
